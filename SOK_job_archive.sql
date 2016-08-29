@@ -14,8 +14,8 @@ FLASHBACK ON;
 --------------------------------------------------
 
 /* Создание таблицы архивных данных */
-
-create table HR.TEST_arch as select * from HR.TEST where create_date < sysdate -3; -- необходимо указать период
+create table HR.TEST_ARCH;
+select * into HR.TEST_ARCH from HR.TEST where create_date < sysdate -3; -- необходимо указать период
 
 --------------------------------------------------
 
